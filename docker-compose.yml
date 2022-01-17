@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  go_api:
+    build:
+      context: .
+      args:
+        goflags: ""
+    restart: always
+    ports:
+      - "3000:3000"
+      - "4000:4000"
+    volumes:
+      - ./:/src
