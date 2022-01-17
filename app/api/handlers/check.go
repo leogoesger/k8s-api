@@ -18,7 +18,7 @@ func NewCheckAPI(log *log.Logger, build string) *check {
 }
 
 func (c *check) health(ctx context.Context, w http.ResponseWriter, r *http.Request) error {
-	status := "ok"
+	status := "okdokie"
 	statusCode := http.StatusOK
 
 	health := struct {
